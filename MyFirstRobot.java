@@ -40,6 +40,7 @@ public class MyFirstRobot extends Robot
 	}
 	public void onBulletHit (BulletHitEvent e){
 		setColors(Color.green,Color.magenta,Color.green);
+		System.out.println("I've been hit!");
 	}
 	
 	/**
