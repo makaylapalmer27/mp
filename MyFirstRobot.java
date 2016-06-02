@@ -15,8 +15,8 @@ public class MyFirstRobot extends Robot
 	public void run() {
 		// Initialization of the robot should be put here
 
-		setColors(Color.magenta,new Color(104,250,7),new Color(0,255,229)); // body,gun,radar
 
+		setColors(Color.magenta,new Color(104,250,7),new Color(0,255,229)); // body,gun,radar
 		// Robot main loop
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
@@ -26,7 +26,6 @@ public class MyFirstRobot extends Robot
 			turnGunRight(360);
 		}
 	}
-	
 	/**
 	 * onScannedRobot: What to do when you see another robot
 	 */
@@ -34,6 +33,7 @@ public class MyFirstRobot extends Robot
 		// Replace the next line with any behavior you would like
 		fire(4);
 	}
+
 	public void onBulletMissed (BulletMissedEvent e){
 		setColors(Color.red,Color.red,Color.red);
 		
@@ -41,6 +41,7 @@ public class MyFirstRobot extends Robot
 	public void onBulletHit (BulletHitEvent e){
 		setColors(Color.green,Color.magenta,Color.green);
 	}
+	
 	/**
 	 * onHitByBullet: What to do when you're hit by a bullet
 	 */
