@@ -22,6 +22,7 @@ public class MyFirstRobot extends Robot
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
 			turnGunRight(360);
+			turnLeft(35);
 			back(100);
 			turnGunRight(360);
 		}
@@ -48,7 +49,9 @@ public class MyFirstRobot extends Robot
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
 		// Replace the next line with any behavior you would like
+	turnLeft(-75);
 		back(10);
+		
 	}
 	
 	/**
@@ -58,4 +61,7 @@ public class MyFirstRobot extends Robot
 		// Replace the next line with any behavior you would like
 		back(20);
 	}	
+	public void onWin(WinEvent event){
+		setAllColors(Color.magenta);
+	}
 }
